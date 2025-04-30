@@ -6,9 +6,18 @@ public class Main {
         CarInterface myCar1 = new City();
         CarInterface myCar2 = new HRV();
 
+        Park myPark = new GasStation();
+        System.out.println(myPark);
+        myPark.parking();
+        myPark.gasLevel();
+
+
         myCar.turnOn();
         myCar1.accelerate();
+        myCar1.brake();
         myCar2.turnOff();
+
+
     }
 }
 
